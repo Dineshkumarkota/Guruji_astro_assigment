@@ -8,12 +8,25 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "src/api.js" 
+      "src": "/api/register",
+      "methods": ["POST"],
+      "dest": "src/api.js"
     },
     {
-      "src": "/api", 
+      "src": "/api/login",
+      "methods": ["POST"],
+      "dest": "src/api.js"
+    },
+    {
+      "src": "/api/requests",
+      "methods": ["GET"],
+      "dest": "src/api.js"
+    },
+    {
+      "src": "/api/enqueue",
+      "methods": ["POST"],
       "dest": "src/api.js"
     }
   ]
 }
+
