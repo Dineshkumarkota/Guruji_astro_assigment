@@ -1,0 +1,29 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/api.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "src/auth.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "src/queue.js",
+        "use": "@vercel/node"
+      },
+      {
+        "src": "src/worker.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/(.*)",
+        "dest": "/src/api.js"
+      }
+    ]
+  }
+  
+  
