@@ -1,0 +1,13 @@
+{
+  "name": "flow_distribution",
+  "version": "1.0.0",
+  "description": "Flow Distribution Algorithm for connecting users with astrologers",
+  "main": "api.js",
+  "scripts": {
+    "start": "node src/api.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+
