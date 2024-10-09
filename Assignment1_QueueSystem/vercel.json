@@ -1,0 +1,17 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "src/api.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/api/register",
+        "methods": ["POST"],
+        "dest": "src/api.js"
+      }
+    ]
+  }
+  
